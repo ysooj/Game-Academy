@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{AF6F4D27-56CA-4E1D-942F-071EB52F6964}|Program.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5CDE734-F502-4E8D-BA1E-6E0A501C9657}|..\\Class1th (Compile)\\Class1th (Compile).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class1th (Compile)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F4048A50-DDD6-4320-8A47-A371F7E62EA3}|..\\Class2th (Variable \u0026 Constant)\\Class2th (Variable \u0026 Constant).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class2th (Variable \u0026 Constant)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,21 +17,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class1th (Compile)\\Source.c",
-              "RelativeDocumentMoniker": "..\\Class1th (Compile)\\Source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class1th (Compile)\\Source.c",
-              "RelativeToolTip": "..\\Class1th (Compile)\\Source.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-11T11:08:13.194Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,9 +27,22 @@
               "RelativeDocumentMoniker": "Source.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\Source.c*",
               "RelativeToolTip": "Source.c*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAwwHcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-10T12:08:27.771Z",
+              "WhenOpened": "2025-04-14T11:11:09.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class2th (Variable \u0026 Constant)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class2th (Variable \u0026 Constant)\\Source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class2th (Variable \u0026 Constant)\\Source.c",
+              "RelativeToolTip": "..\\Class2th (Variable \u0026 Constant)\\Source.c",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-04-14T11:10:30.742Z",
               "EditorCaption": ""
             }
           ]
