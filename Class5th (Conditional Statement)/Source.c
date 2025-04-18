@@ -114,6 +114,9 @@ void main()
 	// default: printf("Exception\n");
 	// 	break;
 	// }
+
+	// 게임에서 메뉴 선택이나
+	// 던전, 마을 등으로 이동할 때 사용할 수 있다.
 #pragma endregion
 
 #pragma region 논리 연산자
