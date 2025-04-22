@@ -54,23 +54,117 @@ void main()
 	// 포인터의 자료형은 내가 가리키고자하는 변수의 자료형으로 적어주면 된다.
 	// }
 
-	int storage = 10;
-	int * pointer = &storage;
+	// int storage = 10;
+	// int position = 20;
+	// printf("처음 position 변수의 값 : %d\n", position);
+	// 
+	// int * pointer = &storage;
+	// 
+	// // 포인터가 가리키는 메모리 공간의 자료형은 알 수 없으므로,
+	// // 포인터가 가리키는 메모리의 자료형을 선언해주어야 합니다.
+	// // {따라서 아래와 같이 다른 자료형으로 적으면 제대로 출력되지 않을 수 있다.}
+	// // float * reference = &storage;
+	// 
+	// printf("storage의 주소 : %p\n", &storage);
+	// printf("pointer의 값 : %p\n", pointer);
+	// printf("pointer의 주소 : %p\n\n", &pointer);
+	// 
+	// // [역참조]
+	// // {포인터를 통해 값을 확인하고 수정할 수 있다.}
+	// *pointer = 99;
+	// printf("storage 변수의 값 : %d\n", storage);
+	// printf("pointer 변수가 가리키는 값 : %d\n", *pointer);
+	// 
+	// pointer = &position;
+	// 
+	// *pointer = 100;
+	// printf("역참조로 수정된 position 변수의 값 : %d\n", position);
+	// printf("pointer 변수가 가리키는 값 : %d\n", *pointer);
+	// printf("pointer의 값 : %p\n\n", pointer);
+	// 
+	// // 포인터 변수의 크기는 중앙 처리 장치가 한 번에 처리할 수 있는 크기로 정해지며,
+	// // 한 번에 처리할 수 있는 크기는 운영체제에 따라 크기가 결정됩니다.
+	// 
+	// printf("int 크기 : %u\n", sizeof(int));
+	// printf("pointer 변수의 크기 : %u\n", sizeof(pointer));
+#pragma endregion
 
-	// 포인터가 가리키는 메모리 공간의 자료형은 알 수 없으므로,
-	// 포인터가 가리키는 메모리의 자료형을 선언해주어야 합니다.
-	// {따라서 아래와 같이 다른 자료형으로 적으면 제대로 출력되지 않을 수 있다.}
-	float * reference = &storage;
+#pragma region  범용 포인터
+	// 자료형이 정해지지 않은 상태로 모든 자료형을 저장할 수 있는 포인터입니다.
 
-	printf("storage의 주소 : %p\n", &storage);
-	printf("pointer의 값 : %p\n", pointer);
-	printf("pointer의 주소 : %p\n", &pointer);
+	// char character = 'A';
+	// int integer = 20;
+	// float decimal = 1.0f;
+	// 
+	// void * reference = &character;
+	// 
+	// printf("처음 character 변수의 값 : %c\n", character);
+	// printf("character의 주소 값 : %p\n", &character);
+	// printf("reference의 값 : %p\n\n", reference);
+	// 
+	// // 범용 포인터는 메모리 주소에 접근해서 값을 변경할 수 없습니다.
+	// // *reference = 'B';
+	// // 위와 같이 역참조 하려고 하면 에러가 발생.
+	// // 범용 포인터로 변수의 메모리에 접근하려면
+	// // 범용 포인터가 가리키는 변수의 자료형으로 형 변환을 해주어야 합니다.
+	// 
+	// *(char *)reference = 'B';
+	// printf("역참조로 수정된 character 변수의 값 : %c\n", character);
+	// printf("character의 주소 값 : %p\n", &character);
+	// printf("reference의 값 : %p\n\n", reference);
+	// 
+	// reference = &integer;
+	// *(int *)reference = 20;
+	// printf("역참조로 수정된 integer 변수의 값 : %d\n", integer);
+	// printf("integer 변수의 주소 값 : %p\n", &integer);
+	// printf("reference의 값 : %p\n\n", reference);
+	// 
+	// reference = &decimal;
+	// *(float *)reference = 5.0f;
+	// printf("역참조로 수정된 decimal 변수의 값 : %f\n", decimal);
+	// printf("decimal 변수의 주소 값 : %p\n", &decimal);
+	// printf("reference의 값 : %p\n\n", reference);
+#pragma endregion
 
-	// [역참조]
-	// {포인터를 통해 값을 확인하고 수정할 수 있다.}
-	*pointer = 99;
-	printf("storage 변수의 값 : %d\n", storage);
-	printf("pointer 변수가 가리키는 값 : %d\n", *pointer);
+#pragma region 상수 지시 포인터
+	// 포인터가 가리키는 주소에 저장되어 있는 값을
+	// 변경할 수 없도록 지정되어 있는 포인터입니다.
+
+int y = 10;
+int z = 20;
+
+const int * constPointer = &y;
+
+// 역참조로 데이터를 바꾸는 게 안 된다.
+// *constPointer = 99;
+
+printf("y 변수의 주소 값 : %p\n", &y);
+printf("constPointer의 값 : %p\n\n", constPointer);
+
+constPointer = &z;
+
+printf("z 변수의 주소 값 : %p\n", &z);
+printf("constPointer의 값 : %p\n\n", constPointer);
+
+// 
+#pragma endregion
+
+#pragma region 포인터 상수
+// 포인터 변수가 가리키고 있는 주소 값을 변경할 수 없는 포인터입니다.
+
+int protein = 10;
+int fat = 5;
+
+printf("protein 변수의 값 : %d\n", protein);
+
+int* const constReference = &protein;
+
+*constReference = 20;
+
+printf("역참조로 수정된 protein 변수의 값 : %d\n", protein);
+
+// constReference = &fat;
+// 위와 같이 새 주소 값으로 변경할 수 없다.
 #pragma endregion
 
 }
