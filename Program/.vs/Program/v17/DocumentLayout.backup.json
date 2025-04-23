@@ -3,8 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF6F4D27-56CA-4E1D-942F-071EB52F6964}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AF6F4D27-56CA-4E1D-942F-071EB52F6964}|Program.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0BC53CCE-C4B2-47BB-A318-FF1949EFD6D9}|..\\Class8th (Pointer)\\Class8th (Pointer).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class8th (Pointer)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D55319D5-C2E8-4611-B75B-4B1BCC840DFE}|..\\Class7th (Type Conversion)\\Class7th (Type Conversion).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class7th (Type Conversion)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -35,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class8th (Pointer)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class8th (Pointer)\\Source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Class8th (Pointer)\\Source.c",
+              "RelativeToolTip": "..\\Class8th (Pointer)\\Source.c",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-04-23T11:10:02Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -47,8 +59,7 @@
               "RelativeToolTip": "..\\Class7th (Type Conversion)\\Source.c",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-21T11:28:12.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T11:28:12.904Z"
             },
             {
               "$type": "Document",
@@ -84,8 +95,7 @@
               "RelativeToolTip": "..\\Class5th (Conditional Statement)\\Source.c",
               "ViewState": "AgIAALEAAAAAAAAAAAAAAHcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-17T11:44:23.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T11:44:23.532Z"
             },
             {
               "$type": "Document",
@@ -97,8 +107,7 @@
               "RelativeToolTip": "..\\Class4th (Overflow \u0026 Underflow)\\Source.c",
               "ViewState": "AgIAADQAAAAAAAAAAAAAAD8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-16T11:20:33.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T11:20:33.597Z"
             },
             {
               "$type": "Document",
@@ -111,19 +120,6 @@
               "ViewState": "AgIAAEIAAAAAAAAAAAAAAJ8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-04-15T11:26:04.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\Source.c",
-              "RelativeDocumentMoniker": "Source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Academy\\Program\\Source.c*",
-              "RelativeToolTip": "Source.c*",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwKUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-04-14T11:11:09.454Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
