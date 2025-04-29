@@ -117,4 +117,24 @@ void main()
 // 2차원 배열은 행과 열로 구분되며,
 // 앞에 있는 배열은 열을 의미하고, 뒤에 있는 배열은 행을 의미합니다.
 #pragma endregion
+
+#pragma region 아스키 코드
+	// 미국 국립 표준 협회에서 표준화한 정보 교환용 7 bit 부호 체계입니다.
+
+char alphabet = 'A';
+
+printf("alphabet 변수의 10진수 값 : %d\n", alphabet);
+
+// // 내 버전
+// for (int ascii = 65; ascii <= 90; ascii++)
+// {
+// 	printf("alphabet : %c\n", ascii);
+// }
+// 
+// // 선생님 버전
+// for (int i = 0; i < 26; i++)
+// {
+// 	printf("%c ", 'A' + i);
+// }
+#pragma endregion
 }

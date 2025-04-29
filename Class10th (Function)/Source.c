@@ -1,0 +1,221 @@
+#include <stdio.h>
+
+void Process()
+{
+	printf("Process...\n");
+	printf("----------\n");
+}
+
+int Damage()
+{
+	return 10;
+}
+
+char Character()
+{
+	return 36.5f;
+}
+
+void Position(int x, int y)
+{
+	printf("x의 값 : %d\n", x);
+	printf("y의 값 : %d\n", y);
+}
+
+void Color(char red, int green, float blue)
+{
+	printf("red의 값 : %c\n", red);
+	printf("green의 값 : %d\n", green);
+	printf("blue의 값 : %f\n", blue);
+}
+
+void Swap(int* left, int* right)
+{
+	int temporary = *left;
+
+	*left = *right;
+	*right = temporary;
+
+	// printf("left의 값 : %d\n", left);
+	// printf("right의 값 : %d\n", right);
+
+	printf("left의 주소 : %p\n", left);
+	printf("right의 주소 : %p\n\n", right);
+}
+
+void Recursion(int count)
+{
+	if (count <= 0)
+	{
+		return;
+	}
+
+	Recursion(count - 1);
+
+	printf("Recursion\n");
+	printf("count의 값 : %d\n", count);
+}
+
+inline void Calculator()
+{
+	printf("Calculator...\n");
+}
+
+int main()
+{
+#pragma region [과제]삼항 연산자
+	// 간단한 예제도 만들어보자.
+
+	// 삼항 연산자는 변수나 조건식이 참이냐 거짓이냐에 따라 다른 값을 사용할 수 있게 한다.
+	// if문보다 간단하게 쓸 수 있다.
+
+	// int hunger = 9;
+	// const char* state = hunger <= 100 && hunger >= 90 ? "매우 배고픈"
+	// 	: hunger < 90 && hunger >= 50 ? "배고픈"
+	// 	: hunger < 50 && hunger > 10 ? "배부른"
+	// 	: "매우 배부른";
+	// printf("지금 나는 %s 상태입니다.\n", state);
+
+	// 변수/조건식 ? 값1 : 값2;
+	// 참/거짓을 판단할 변수나 조건식 ? 참일 때 사용할 값 : 거짓일 때 사용할 값;
+
+	// [if문으로 쓴다면 아래와 같이 코드가 길어진다.]
+	// int hunger = 20;
+	// 
+	// if (hunger <= 100 && hunger >= 90)
+	// {
+	//     printf("매우 배가 고픈 상태입니다.");
+	// }
+	// else if (hunger < 90 && hunger >= 50)
+	// {
+	//     printf("배가 고픈 상태입니다.");
+	// }
+	// else if (hunger < 50 && hunger > 10)
+	// {
+	//     printf("배가 부른 상태입니다.");
+	// }
+	// else
+	// {
+	//     printf("매우 배가 부른 상태입니다.");
+	// }
+#pragma endregion
+
+#pragma region 함수
+	// 하나의 특별한 목적의 작업을 수행하기 위해
+	// 독립적으로 설계된 코드의 집합입니다.
+
+	// Process();
+	// Process();
+#pragma endregion
+
+#pragma region 반환형
+	// 함수가 실행을 끝내고 돌려주는 결과의 자료형입니다.
+
+	// return은 값을 반환하기도 하면서 함수를 종료시키기도 한다.
+
+	// printf("Damage 함수의 값 : %d\n", Damage());
+	// printf("Character 함수의 값 : %c\n", Character());
+
+	// 함수의 경우, 자료형과 반환하는 값의 형태가 일치하지 않으면
+	// 원하는 값을 얻을 수 없습니다.
+#pragma endregion
+
+#pragma region 매개 변수
+	// 함수의 정의에서 전달받은 인수를 함수 내부로 전달하기 위해 사용하는 변수입니다.
+
+	// int x = 10;
+	// int y = 20;
+	// 
+	// Position(x, y);
+
+	// 매개 변수는 함수 내부에서만 연산이 이루어지며,
+	// 함수가 종료되면 메모리에서 해제됩니다.
+
+	// Color('A', 1, 0.5f);
+
+	// 하나의 함수에 서로 다른 자료형의 매개 변수를 함께 정의할 수 있으며,
+	// 여러 개의 매개 변수를 생성할 수 있습니다.
+
+	// 매개 변수는 main 함수 밖에서 만든 함수를 main 함수 안에서 호출할 때 함수 안에 적는 값을 의미한다.
+	// 예 : Color('A', 1, 0.5f); 에서의 'A', 1, 0.5f
+#pragma endregion
+
+#pragma region 인수
+	// 함수가 호출될 때, 매개 변수에 실제로 전달되는 값입니다.
+
+	// int first = 10;
+	// int second = 20;
+	// 
+	// int temporary = first;
+	// 
+	// first = second;
+	// second = temporary;
+	// 
+	// printf("first의 값 : %d\n", first);
+	// printf("second의 값 : %d\n", second);
+
+	// 인수의 경우, 함수에 있는 매개 변수의 수에 따라 전달할 수 있는 인수의 수가 결정되며,
+	// 값을 전달하는 인수와 값을 전달받는 매개 변수의 자료형이 서로 일치해야 합니다.
+
+	// int first = 10;
+	// int second = 20;
+	// 
+	// Swap(& first, & second);
+	// 
+	// printf("바깥의 first의 값 : %d\n", first);
+	// printf("바깥의 second의 값 : %d\n", second);
+
+	// printf("first의 주소 : %p\n", &first);
+	// printf("second의 주소 : %p\n\n", &second);
+#pragma endregion
+
+#pragma region [과제] Call By Value, Call By Reference(참조에 의한 전달)에 대해 알아보기
+	// Call by Value (값에 의한 전달)
+
+// 함수를 호출할 때 변수에 저장된 값을 복사해서 함수에 전달하는 방식
+// 원래 변수와 다른 공간에 복사본이 만들어져 전달됨
+// 함수 안에서 값을 바꿔도 원래 변수는 변하지 않음
+
+
+	// Call by Reference (참조에 의한 전달)
+
+// 변수를 함수에 전달할 때 변수의 주소(메모리 위치)를 전달하는 방식
+// 함수 안에서 원래 변수에 접근할 수 있음
+// 함수 안에서 값을 바꾸면 원래 변수도 함께 바뀜
+#pragma endregion	
+
+#pragma region 재귀 함수
+	// 어떤 함수에서 자신을 다시 호출하여 작업을 수행하는 함수입니다.
+
+	// 재귀 함수는 함수를 계속 호출하기 때문에 스택 영역에 메모리가 계속 쌓이게 되므로
+	// 스택 오버플로우가 일어납니다.
+
+// Recursion(5);
+
+	// 함수의 흐름은 아래와 같다.
+	// main() 호출 -> Recursion(5) -> Recursion(4) -> Recursion(3) -> Recursion(2) -> Recursion(1)
+	// -> Recursion(0) → return -> count = 1 → print -> count = 2 → print -> count = 3 → print
+	// -> count = 4 → print -> count = 5 → print
+#pragma endregion
+
+#pragma region 인라인 함수
+	// 함수를 호출하는 대신, 함수가 호출되는 위치마다
+	// 함수의 코드를 복사하여 전달하는 방식의 함수입니다.
+
+	// 인라인 함수는 함수를 호출하는 과정이 없으므로 처리 속도가 빠르지만
+	// 인라인 함수를 많이 사용하게 되면, 함수의 코드가 복사되기 때문에
+	// 실행 파일의 크기가 커지게 됩니다.
+
+	Calculator();
+
+	// 인라인 함수는 컴파일 시점에 확장되며, 컴파일 시 인라인 함수로 선언하더라도
+	// 상황에 따라 일반 함수로 변환되기도 합니다.
+#pragma endregion
+
+#pragma region [과제] 오버 헤드에 대해 알아보기
+	// 프로그램이 어떤 작업을 수행하기 위해 추가적으로 소모하는 자원
+	// 이 자원은 시간(실행 시간), 메모리(공간), 또는 CPU 처리 능력일 수 있다.
+#pragma endregion
+
+	return 0;
+}
