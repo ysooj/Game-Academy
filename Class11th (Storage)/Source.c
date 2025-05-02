@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-// std : standard (기본)
-// stdio : standard input output (입출력)
-// stdarg : standard argument (인수)
-
 int stage = 1;
 
 // static int score = 0;
@@ -107,14 +103,60 @@ int main()
 
 #pragma endregion
 
-#pragma region [과제] 프레임 워크에 대해 알아보자.
-	// 라이브러리
+#pragma region [과제] 프레임 워크
+	// 소프트웨어 개발에서 설계와 구현을 재사용할 수 있도록, 일련의 협업화된 클래스들을 제공하는 구조
+	// 즉, 개발자가 애플리케이션을 만들 때 반복적인 작업을 줄이고, 일정한 규칙 아래 효율적으로 개발할 수 있도록 도와주는 틀
+
+	// 장점
+	// 효율적인 코드 작성 가능
+	// 정해진 규약에 따라 애플리케이션 관리가 쉬움
+
+	// 단점
+	// 사용하고자 하는 프레임워크에 대한 학습이 필요
+	// 자유롭고 유연한 개발이 어려움
+
+	// 종류
+	// Java, Kotlin, Groovy: Spring
+	// Python: Django, Flask
+	// PHP: Laravel
+	// Ruby: Ruby on Rails
+	// Android 앱 개발: Android Framework
+	// iOS 앱 개발: Cocoa Touch
+	// 웹 프론트엔드 개발: Angular, Vue.js
+	// Java 기반 웹 개발: Struts (JSP 기반)
+
 
 	// <stdarg.h> 에 있는 함수들
 	// va_list : 가변 인수 목록을 저장하는 포인터
 	// va_start : 가변 인수 처리를 시작하기 위해 포인터를 초기화
 	// va_arg : 현재 인수를 가져오고, 다음 인수로 이동하는 기능(매크로)
 	// va_end : 가변 인수 처리를 종료하는 기능
+#pragma endregion
+
+#pragma region [과제] 라이브러리
+	// 자주 쓰이는 함수들을 모아놓은 코드 묶음
+	// 라이브러리를 불러와서 필요한 기능을 바로 사용할 수 있다.
+
+	// 장점
+	// 재사용 가능
+	// 개발 시간 단축
+	// 안정성과 신뢰성
+	// 코드 간결화
+	// 유지보수 용이
+
+	// 단점
+	// 제한된 기능
+	// 내부 동작 이해 어려움
+	// 불필요한 코드 포함 가능성
+	// 버전 문제
+
+	// 종류
+	// <stdio.h>          입출력                   printf(), scanf()
+	// <stdlib.h>          일반 유틸리티 함수       malloc(), free(), exit()
+	// <string.h>          문자열 처리               strlen(), strcpy(), strcmp()
+	// < math.h >         수학 계산                   sqrt(), pow(), sin()
+	// < ctype.h >        문자 처리                   isalpha(), isdigit(), tolower()
+	// < time.h >         시간 관련 기능           time(), clock()
 #pragma endregion
 
 	return 0;
