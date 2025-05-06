@@ -1,5 +1,2 @@
 ﻿  Source.c
-C:\Users\Administrator\Desktop\Game-Academy\Program\Source.c(25,7): error C2374: 'pointer': 재정의. 여러 번 초기화했습니다.
-      C:\Users\Administrator\Desktop\Game-Academy\Program\Source.c(9,8):
-      'pointer' 선언을 참조하십시오.
-  
+  Program.vcxproj -> C:\Users\Administrator\Desktop\Game-Academy\Program\x64\Debug\Program.exe

@@ -171,4 +171,28 @@ void main()
 // 다른 변수의 주소를 새로 저장할 수는 없습니다.
 #pragma endregion
 
+#pragma region 허상 포인터
+// // 이미 해제된 메모리 영역을 가리키는 포인터입니다.
+// 
+// 	int * address = NULL;
+// 	// 
+// 	// *address = 99;
+// 	// 역참조로 주소 값이 NULL인 것의 값을 바꾸려고 하면 nullptr 오류가 발생!
+// 	
+// 	{
+// 		int room = 10;
+// 
+// 		address = &room;
+// 
+// 		printf("address가 가리키고 있는 값 : %d\n", *address);
+// 	}
+// 
+// 	*address = 30;
+// 
+// 	printf("address가 가리키고 있는 값 : %d\n", *address);
+// 
+// 	// 이미 해제된 메모리를 참조하는 것은 위험하다고 한다. 따라서 허상 포인터는 조심해야 한다.
+// 	// 이를 해결하기 위해서는 해제된 후에 NULL로 값을 다시 바꿔주는 게 좋다.
+// 	// C++에는 스마트 포인터라는 걸로 이를 해결할 수 있다.
+#pragma endregion
 }
