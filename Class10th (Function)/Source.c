@@ -90,6 +90,31 @@ void Average(int count, ...)
 	va_end(pointer);
 }
 
+int Add(int x, int y)
+{
+	return x + y;
+}
+
+int Subtract(int x, int y)
+{
+	return x - y;
+}
+
+int Multiply(int x, int y)
+{
+	return x * y;
+}
+
+int Devide(int x, int y)
+{
+	return x / y;
+}
+
+void Provide()
+{
+	printf("Provide\n");
+}
+
 int main()
 {
 #pragma region [과제]삼항 연산자
@@ -235,7 +260,7 @@ int main()
 	// 인라인 함수를 많이 사용하게 되면, 함수의 코드가 복사되기 때문에
 	// 실행 파일의 크기가 커지게 됩니다.
 
-	Calculator();
+	// Calculator();
 
 	// 인라인 함수는 컴파일 시점에 확장되며, 컴파일 시 인라인 함수로 선언하더라도
 	// 상황에 따라 일반 함수로 변환되기도 합니다.
@@ -285,6 +310,43 @@ int main()
 	// Average(3, 10, 20, 30);
 	// Average(5, 10, 20, 30, 40, 50);
 #pragma endregion
+
+#pragma region 함수 포인터
+	// 함수의 주소 값을 저장하고 가리킬 수 있는
+	// 포인터 변수입니다.
+
+	// 함수 포인터는 함수의 반환형과 매개 변수의 타입이 일치해야 하며,
+	// 함수 포인터를 사용하여 동적으로 메모리를 할당할 수 없습니다.
+
+	void (*functionPointer)();
+	// 이게 함수 포인터 선언.
+
+	functionPointer = Provide;
+
+	functionPointer();
+#pragma endregion
+
+#pragma region 과제
+	// Add, Substract, Multiply, Devide 각가 주소 호출하기
+
+	void (*operator)();
+
+	operator = Add;
+	printf("Add의 주소 : %p\n", operator);
+
+	operator = Subtract;
+	printf("Subtract의 주소 : %p\n", operator);
+
+	operator = Multiply;
+	printf("Multiply의 주소 : %p\n", operator);
+
+	operator = Devide;
+	printf("Devide의 주소 : %p\n", operator);
+
+	// 함수 포인터를 호출해서 사용하는 게 과제!
+#pragma endregion
+
+
 
 	return 0;
 }

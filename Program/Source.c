@@ -22,8 +22,14 @@ struct Stat
 struct Vector3
 {
     int x;
-    int z;
-    double y;
+    int y;
+    double z;
+};
+
+struct Point2D
+{
+    int x;
+    int y;
 };
 
 int main()
@@ -112,16 +118,16 @@ int main()
     // 멤버 변수를 메모리에서 CPU로 읽을 때한 번에 읽을 수 있도록 컴파일러가 레지스터의 블록에 맞추어 바이트를 패딩해주는
     // 최적화 작업입니다.
 
-    struct Stat stat;
-
-    printf("Stat 구조체의 크기 : %d byte\n", sizeof(stat));
+    // struct Stat stat;
+    // 
+    // printf("Stat 구조체의 크기 : %d byte\n", sizeof(stat));
 
     // 구조체의 크기는 구조체를 구성하는 멤버 중에서
     // 크기가 가장 큰 자료형의 배수가 되도록 정렬합니다.
 
-    struct Vector3 vector3;
-    
-    printf("Vector3 구조체의 크기 : %d byte\n", sizeof(vector3));
+    // struct Vector3 vector3;
+    // 
+    // printf("Vector3 구조체의 크기 : %d byte\n", sizeof(vector3));
 
     // 구조체 크기의 경우, 멤버 변수의 순서에 따라 메모리의 크기가 다르게 설정될 수 있으며,
     // 구조체 크기를 결정하는 형태는 기본 자료형으로만 구성됩니다.
@@ -134,11 +140,11 @@ int main()
 
 #pragma region 두 점 사이의 거리
 
-    // 루트 함수
-    printf("%lf\n", sqrt(100));
-
-    // 제곱 함수
-    printf("%lf", pow(10, 2));
+    // // 루트 함수
+    // printf("%lf\n", sqrt(100));
+    // 
+    // // 제곱 함수
+    // printf("%lf\n", pow(10, 2));
 
 #pragma endregion
 
@@ -147,13 +153,25 @@ int main()
     // 그 길이가 5 이상이면 '평화 상태'
     // 그 길이가 5 이하이면 '전투 상태'
 
-    struct Vector3 vector3 = { 5, 5, 5 };
-
-
-    pow()
+    // struct Point2D rogue = { 0, 0 };
+    // struct Point2D slime = { 5, 5 };
+    // 
+    // double x = rogue.x - slime.x;
+    // double y = rogue.y - slime.y;
+    // 
+    // double distance = sqrt(pow(x, 2) + pow(y, 2));
+    // 
+    // if (distance >= 5.0f)
+    // {
+    //     printf("Idle State\n");
+    //     // 대기 상태
+    // }
+    // else
+    // {
+    //     printf("Attack State\n");
+    //     // 전투 상태
+    // }
 #pragma endregion
-
-
 
 	return 0;
 }
