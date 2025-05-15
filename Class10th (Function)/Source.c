@@ -105,7 +105,7 @@ int Multiply(int x, int y)
 	return x * y;
 }
 
-int Devide(int x, int y)
+int Divide(int x, int y)
 {
 	return x / y;
 }
@@ -318,30 +318,34 @@ int main()
 	// 함수 포인터는 함수의 반환형과 매개 변수의 타입이 일치해야 하며,
 	// 함수 포인터를 사용하여 동적으로 메모리를 할당할 수 없습니다.
 
-	void (*functionPointer)();
-	// 이게 함수 포인터 선언.
-
-	functionPointer = Provide;
-
-	functionPointer();
+	// void (*functionPointer)();
+	// // 이게 함수 포인터 선언.
+	// 
+	// functionPointer = Provide;
+	// 
+	// functionPointer();
 #pragma endregion
 
 #pragma region 과제
-	// Add, Substract, Multiply, Devide 각가 주소 호출하기
+	// Add, Substract, Multiply, Divide 각각 주소 호출하기
 
-	void (*operator)();
-
-	operator = Add;
-	printf("Add의 주소 : %p\n", operator);
-
-	operator = Subtract;
-	printf("Subtract의 주소 : %p\n", operator);
-
-	operator = Multiply;
-	printf("Multiply의 주소 : %p\n", operator);
-
-	operator = Devide;
-	printf("Devide의 주소 : %p\n", operator);
+	// int (*operator)();
+	// 
+	// operator = Add;
+	// printf("Add의 주소 : %p\n", operator);
+	// printf("Add의 값 : %d\n\n", operator(1, 1));
+	// 
+	// operator = Subtract;
+	// printf("Subtract의 주소 : %p\n", operator);
+	// printf("Subtract의 값 : %d\n\n", operator(2, 1));
+	// 
+	// operator = Multiply;
+	// printf("Multiply의 주소 : %p\n", operator);
+	// printf("Multiply의 값 : %d\n\n", operator(3, 1));
+	// 
+	// operator = Divide;
+	// printf("Divide의 주소 : %p\n", operator);
+	// printf("Divide의 값 : %d\n\n", operator(8, 2));
 
 	// 함수 포인터를 호출해서 사용하는 게 과제!
 #pragma endregion
